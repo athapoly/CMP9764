@@ -1,8 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "L-CAS Humble CUDA-OpenGL Teaching Devcontainer",
-	"image": "lcas.lincoln.ac.uk/lcas/cmp9767:1.0",
+	"name": " CMP9764 Teaching Devcontainer",
+	"image": "ghcr.io/athapoly/cmp9764_dock:latest",
 
 	"forwardPorts": [5801],
 	"portsAttributes": {
@@ -14,7 +14,7 @@
 
 	"postStartCommand": "/opt/entrypoint.sh /bin/true; .devcontainer/post-create.sh",
 
-	"remoteUser": "ros",
+	"remoteUser": "lcas",
 	"updateRemoteUserUID": true, // ensure internal user has the same UID as the host user and update file permissions
 	"customizations": {
 		"vscode": {
